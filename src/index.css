@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  background-color: rgb(240, 233, 233);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.root {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.root >* {
+  margin:1%;
+}
+
+.all {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.heading {
+  background-image:url('./texture.jpg');
+  background-size:cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.heading {
+  width: 100%;
+  max-height: 40vh;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.form >* {
+  margin: 3px;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse; 
+}
+
+ th:first-child {
+    border-radius: 6px 0 0 0;
+  }
+
+  th:last-child {
+    border-radius: 0 6px 0 0;
+  }
+
+  th:only-child{
+    border-radius: 6px 6px 0 0;
+  }
+
+th, td {
+  padding: 15px;
+  text-align: center;
+}
+
+tr:nth-child(odd) {
+  background: rgba(168, 208, 233, 0.6);
+}
+
+tr:nth-child(even) {
+  background: rgba(162, 178, 194, 0.6);
+}
+
+tr:first-of-type {
+  background-image: linear-gradient(to bottom right, rgb(243, 104, 122), rgb(160, 24, 51));
+}
+
+.notification {
+  width: 25vw;
+  border: 2px solid gray;
+  border-radius: 10px;
+  color: crimson;
+  padding: 40px 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.7;
+  text-align: center;
+  position: fixed;
+  left: 35vw;
+  right: 35vw;
+  top: 30vh;
+  background: lightgoldenrodyellow;
+}
+
+@media all and (max-width: 870px) {
+  .form {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .form p {
+    font-size: 12px;
+  }
+
+}
+
+.timer {
+  text-align: center;
+}
+
+.timer h1 {
+  color: crimson;
+}
