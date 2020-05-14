@@ -1,0 +1,7 @@
+POST http://localhost:3001/api/cycles
+Content-Type: application/json
+
+{
+    "start": "2020-02-05",
+    "end": "2020-02-08"
+}
